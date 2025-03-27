@@ -9,9 +9,10 @@ const pictures = [
 ];
 const frameImage = document.querySelector(".img-container");
 const btnSlider = document.querySelectorAll(".btn");
-const directoryURL = "../img/";
+const directoryURL = "/img/";
 const ext = ".jpeg";
 let imageIndex = 0;
+
 
 btnSlider.forEach((btn) => {
   btn.addEventListener("click", (e) => {
