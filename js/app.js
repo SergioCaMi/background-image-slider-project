@@ -34,8 +34,13 @@ btnSlider.forEach((btn) => {
       console.log(imageIndex + "/"+(pictures.length - 1));
     }
     //Actualizamos DOM
-    frameImage.style.backgroundImage = `url('${
-      directoryURL + pictures[imageIndex] + ext
-    }')`;
+    frameImage.style.backgroundImage = getUrl(imageIndex);
+    console.log(getUrl(imageIndex));
   });
 });
+
+
+function getUrl(index){
+  return `url('${directoryURL + pictures[index] + ext}')`;
+}
+
